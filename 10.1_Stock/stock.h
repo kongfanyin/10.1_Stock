@@ -3,8 +3,9 @@
 //version 0.0
 #ifndef STOCK00_H_
 #define STOCK00_H_
-using std::string;
 #include <string>
+#include<iostream>
+using std::string;
 class Stock
 {
 public:
@@ -14,14 +15,11 @@ public:
 	void update(double price);
 	void show();
 private:
-	std::string company;
+	string company;
 	long shares;
 	double shares_val;
 	double total_val;
-	void SetTotal() { total_val = shares * shares_val; };
+	void SetTotal();
 };
-
-
-
 #endif // !1
 
